@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-    sc, err := stan_reconnect.Connect("c1", "server-host-2", stan.NatsURL("nats://49.235.146.124:4222"))
+    sc, err := stan_reconnect.Connect("c1", "server-host-2", stan.NatsURL("nats://127.0.0.1:4222"))
     if err != nil {
         fmt.Println("err:" + err.Error())
         return
